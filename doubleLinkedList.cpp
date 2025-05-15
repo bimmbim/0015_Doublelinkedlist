@@ -76,7 +76,16 @@ class DoubleLinkedList {
     while (current != NULL && current -> noMhs != rollNO)
         current = current -> next;
 
+    if (current == NULL) {
+        cout << "Record not found" << endl;
+            return;
+    }
 
+    if (current == START) {
+        START = current -> next;
+            if (START != NULL)
+                START -> prev = NULL;
+    }
 
     }
 
