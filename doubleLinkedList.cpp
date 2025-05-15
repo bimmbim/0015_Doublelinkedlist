@@ -18,7 +18,19 @@ class DoubleLinkedList {
             START = NULL;
         }
 
+    void addNode() {
+        int nim;
+        string nm;
+        cout << "\nEnter the roll number of the student";
+        cin >> nim;
 
+        Node *newNode = new Node(); // step 1
+
+        newNode -> noMhs = nim; // step 2
+
+
+
+    }
     
 
 
