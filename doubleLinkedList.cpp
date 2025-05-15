@@ -67,7 +67,14 @@ class DoubleLinkedList {
             return;
         }
 
+    cout << "\nEnter the roll number of the student whose record is to be deleted: ";
+        int rollNO;
+            cin >> rollNO;
 
+    Node *current = START;
+
+    while (current != NULL && current -> noMhs != rollNO)
+        current = current -> next;
 
 
 
