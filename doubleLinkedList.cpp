@@ -86,7 +86,15 @@ class DoubleLinkedList {
             if (START != NULL)
                 START -> prev = NULL;
     }
+    else {
+        current -> prev -> next = current -> next;
 
+    if (current -> next != NULL)
+        current -> next -> prev = current -> prev;
+    }
+
+    delete current;
+    cout << "Record with roll number " << rollNO << " deleted" << endl;
     }
 
 
