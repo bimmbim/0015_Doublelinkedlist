@@ -97,7 +97,15 @@ class DoubleLinkedList {
     cout << "Record with roll number " << rollNO << " deleted" << endl;
     }
 
+void traverse() {
+    if (START == NULL) {
+        cout << "\nList is empty" << endl;
+        return;
+        }
+    Node *currentNode = START;
 
+
+    }
 
 
 
